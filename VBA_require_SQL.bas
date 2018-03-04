@@ -1,6 +1,13 @@
 Attribute VB_Name = "VBA_require_SQL"
 Option Explicit
 
+'Disable module functions from showing
+'in Excel formula autocomplete
+Option Private Module
+
+'Run table definitions
+'=====================
+'Setup a database from .sql files
 Function setupSQL( _
     dbPath As String, _
     DDLfolderPath As String) _
